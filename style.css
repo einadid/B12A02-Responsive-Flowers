@@ -205,3 +205,85 @@ header{
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
 }
+
+/* Latest Deals */
+.latest-deals {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.latest-deals-content{
+    width: 888px;
+    margin: 0 auto;
+}
+
+.latest-deals h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.latest-deals p {
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+    margin-top: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* join bunch */
+.join-bunch-background {
+    background-image: url(./assets/news-letter-bg.png);
+    height: 533px;
+    width: 100%;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    flex-direction: column; 
+}
+
+.join-bunch-background h1 { 
+    font-weight: 700;
+    font-size: 68px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subscription-form {
+    display: flex; 
+    width: 100%;
+    max-width: 830px;
+}
+
+.email-input {
+    flex-grow: 1;
+    height: 50px;
+    padding: 0 20px;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none; 
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+.subscribe-button {
+    background-color: #E95A08;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    width: 186px;
+    height: 50px;
+    white-space: nowrap;
+    cursor: pointer;
+    box-sizing: border-box;
+}
