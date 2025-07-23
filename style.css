@@ -121,7 +121,7 @@ header{
 .our-plants-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 30px 20px;
     justify-content: space-between;
     align-items: center;
 }
@@ -164,7 +164,7 @@ header{
     font-family:"Inter", sans-serif;
     width: 270px;
     height: 50px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
@@ -172,4 +172,36 @@ header{
 .btn-add-to-cart:hover{
     background-color: #d85a08;
     cursor: pointer;
+}
+
+/* plants-lover-container */
+.plants-lover-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;}
+.plants-lover{
+    width: 540px;
+    height: 597px;
+}
+
+.plants-lover-content{
+    width: 540px;
+    height: 520px;
+}
+
+.plants-lover-content h1{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.plants-lover-content li{
+    list-style-type: circle;
+    list-style-position: inside;
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+    margin-top: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
 }
