@@ -183,6 +183,8 @@ header{
 .plants-lover{
     width: 540px;
     height: 597px;
+    position: relative;
+    width: fit-content; 
 }
 
 .plants-lover-content{
@@ -204,6 +206,15 @@ header{
     margin-top: 16px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
+}
+
+#Experience-logo{
+    width: 286px ;
+    height: 286px ;
+    position: absolute;
+    top: -150px; 
+    left: 350px;
+    filter: drop-shadow(5px 5px 10px rgba(113, 90, 19, 0.494));
 }
 
 /* Latest Deals */
