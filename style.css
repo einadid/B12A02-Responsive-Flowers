@@ -70,23 +70,106 @@ header{
     height: 416px;
     align-items:end;
     justify-content: space-between;
+    margin-bottom: 120px;
 }
 
-.banner-content {
-    width: 570px;
-    height: 296px;
+    .banner-content {
+        width: 570px;
+        height: 296px;
+    }
+
+    .banner-content h1{
+        font-size: 65px;
+        line-height: 1.1;
+        font-weight: 700;
+    }
+
+    .banner-content p{
+        font-size: 22px;
+        line-height: 1.5;
+        font-family: "Inter", sans-serif;
+        margin-top: 13px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+/* Plants Container */
+.our-plants{
+    width: 888px auto;
+    margin-bottom: 212px;
 }
 
-.banner-content h1{
-    font-size: 65px;
-    line-height: 1.1;
-    font-weight: 700;
+.our-plants-content{
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.banner-content p{
+.our-plants-content h1{
+        font-size: 65px;
+        line-height: 1.1;
+        font-weight: 700;
+}
+
+.our-plants-content p{
+        font-size: 22px;
+        line-height: 1.5;
+        font-family: "Inter", sans-serif;
+        margin-top: 16px;
+        color: rgba(0, 0, 0, 0.5);
+}
+
+/* plants cards */
+.our-plants-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plants-card{
+    width: 270px;
+    height: 485px;
+    text-align: center;
+}
+
+.plants-card img{
+    width: 100%;
+    height: 322px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.plants-card h3{
+    font-family:"Inter", sans-serif;
+    color: #111111;
     font-size: 22px;
-    line-height: 1.5;
-    font-family: "Inter", sans-serif;
-    margin-top: 13px;
-    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    margin-bottom: 2 0px;
+}
+
+.plants-card h2{
+    font-family:"Inter", sans-serif;
+    color: #111111;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.btn-add-to-cart{
+    background-color: #E95A08;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family:"Inter", sans-serif;
+    width: 270px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-add-to-cart:hover{
+    background-color: #d85a08;
+    cursor: pointer;
 }
