@@ -508,24 +508,17 @@ nav a {
     height: auto; /* Ensure image scales correctly */
 }
 
-/* mobile view */
+/* -------------------mobile view------------------- */
 @media (max-width: 768px) {
-    
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 16px;
-    font-family: "Noto Serif", sans-serif;
-}    
+
 
 /* navbar */
 .navbar {
-    margin-bottom: 30px;
 }
 
 .navbar-items li {
     display: none; 
-  }
+}
 
 .navbar-items li:last-child {
     display: block; 
@@ -535,11 +528,11 @@ nav a {
 /* banner */
 .banner {
     flex-direction: column; 
-    text-align: left; 
 }
 
 .banner-img {
-    width: 100%; 
+    width: 394px; 
+    height: 245px;
     order: 1; 
   }
 
@@ -556,6 +549,9 @@ nav a {
 }
 
 /* our plants */
+.our-plants{
+    
+}
 .our-plants-content{
     max-width: 100%;
     margin-top: 350px;
@@ -571,9 +567,10 @@ nav a {
 
 /* Plants Card */
 .our-plants-cards{
-    grid-template-columns: repeat(2, 1rem);
-    gap: 20px ;
-    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Plants Lover */
@@ -581,11 +578,18 @@ nav a {
     display: grid;
 }
 
+.plants-lover-container img{
+    display: block;
+}
+
 #Experience-logo{
     display: none;
 }
 
 /* plants lover content */
+.plants-lover-content{
+    margin: 0%;
+}
 .plants-lover-content h1{
     font-size: 2.5rem;
 }
@@ -594,7 +598,14 @@ nav a {
     width: 100%; 
 }
 
-/* our plants */
+.plants-lover-content ul li {
+    font-size: 1rem;
+}
+
+/* Latest Deals */
+.latest-deals{
+    margin: 0%;
+}
 .latest-deals-content{
     max-width: 100%;
 }
@@ -607,8 +618,55 @@ nav a {
     font-size: 0.9rem;
 }
 
+/* promo card  */
+.promo-container{
+    flex-direction: column;
+    margin-top: 0%;
+    height: auto;
+}
 
+.promo-box-mobile{
+    height: 250px;
+}
 
+.promo-text h2 {
+    font-size: 28px;
+}
 
+/* join-bunch-background */
+.join-bunch-background {
+    height: auto;
+    padding: 60px 20px;
+    margin-top: 60px;
+}
 
+.join-bunch-content h1 {
+    font-size: 32px; 
+}
+
+.subscription-form {
+    flex-direction: row;
+}
+
+.email-input,
+.subscribe-button {
+    width: 100%;
+}
+
+.email-input {
+    flex-basis: 70%;  
+}
+
+.subscribe-button {
+    flex-basis: 30%; 
+}
+
+/* footer */
+.footer-content{
+    flex-direction: column;
+}
+
+.footer-logo{
+    margin-bottom: 20px;
+}
 }
