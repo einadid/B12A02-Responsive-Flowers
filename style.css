@@ -26,6 +26,12 @@
     margin-right: 10px;
 }
 
+/* center */
+.center{
+    align-items: center ;
+    text-align: center;
+}
+
 /* Container */
 .container {
     max-width: 1140px;
@@ -94,13 +100,15 @@ header{
 
 /* Plants Container */
 .our-plants{
-    width: 888px auto;
     margin-bottom: 212px;
 }
 
 .our-plants-content{
-    text-align: center;
     margin-bottom: 50px;
+    width: 888px ;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .our-plants-content h1{
@@ -179,7 +187,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 120px;}
+    margin-bottom: 120px;
+}
+
 .plants-lover{
     width: 540px;
     height: 597px;
@@ -197,9 +207,13 @@ header{
     font-size: 50px;
 }
 
+.plants-lover-content ul {
+    padding-left: 30px; 
+}
+
 .plants-lover-content li{
     list-style-type: circle;
-    list-style-position: inside;
+    list-style-position: outside;
     font-size: 22px;
     line-height: 1.5;
     font-family: "Inter", sans-serif;
@@ -440,4 +454,161 @@ footer {
 
 .icon-twitter{
     padding: 9px;
+}
+
+/* Custom mobile view */
+/* Header */
+header {
+  margin-top: 25px;
+}
+
+/* navbar items  */
+.navbar {
+  margin-bottom: 120px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 48px;
+}
+
+nav li {
+  margin: 0 15px;
+  list-style: none; /* Removed bullet points */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-family: Arial, sans-serif; /* Added fallback font */
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+}
+
+.banner-content {
+    flex: 1;
+}
+
+.banner-img {
+    flex: 1;
+}
+
+.banner-img img {
+    max-width: 100%;
+    height: auto; /* Ensure image scales correctly */
+}
+
+/* mobile view */
+@media (max-width: 768px) {
+    
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 16px;
+    font-family: "Noto Serif", sans-serif;
+}    
+
+/* navbar */
+.navbar {
+    margin-bottom: 30px;
+}
+
+.navbar-items li {
+    display: none; 
+  }
+
+.navbar-items li:last-child {
+    display: block; 
+    margin: 10px 0; 
+}
+
+/* banner */
+.banner {
+    flex-direction: column; 
+    text-align: left; 
+}
+
+.banner-img {
+    width: 100%; 
+    order: 1; 
+  }
+
+.banner-content {
+    order: 2; 
+}
+
+.banner-content h1 {
+    font-size: 2.2rem; 
+}
+
+.banner-content p {
+    font-size: 0.9rem;
+}
+
+/* our plants */
+.our-plants-content{
+    max-width: 100%;
+    margin-top: 350px;
+}
+
+.our-plants-content h1 {
+    font-size: 2.2rem;
+}
+
+.our-plants-content p {
+    font-size: 0.9rem;
+}
+
+/* Plants Card */
+.our-plants-cards{
+    grid-template-columns: repeat(2, 1rem);
+    gap: 20px ;
+    width: 100%;
+}
+
+/* Plants Lover */
+.plants-lover-container{
+    display: grid;
+}
+
+#Experience-logo{
+    display: none;
+}
+
+/* plants lover content */
+.plants-lover-content h1{
+    font-size: 2.5rem;
+}
+
+.plants-lover-content ul {
+    width: 100%; 
+}
+
+/* our plants */
+.latest-deals-content{
+    max-width: 100%;
+}
+
+.latest-deals-content h1 {
+    font-size: 2.5rem;
+}
+
+.latest-deals-content p {
+    font-size: 0.9rem;
+}
+
+
+
+
+
 }
