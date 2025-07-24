@@ -456,66 +456,19 @@ footer {
     padding: 9px;
 }
 
-/* Custom mobile view */
-/* Header */
-header {
-  margin-top: 25px;
-}
 
-/* navbar items  */
-.navbar {
-  margin-bottom: 120px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul {
-  display: flex;
-  gap: 48px;
-}
-
-nav li {
-  margin: 0 15px;
-  list-style: none; /* Removed bullet points */
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  font-family: Arial, sans-serif; /* Added fallback font */
-}
-
-.banner {
-    display: flex;
-    align-items: center;
-}
-
-.banner-content {
-    flex: 1;
-}
-
-.banner-img {
-    flex: 1;
-}
-
-.banner-img img {
-    max-width: 100%;
-    height: auto; /* Ensure image scales correctly */
-}
 
 /* -------------------mobile view------------------- */
 @media (max-width: 768px) {
-
+*{
+    margin-right: 16px;
+    margin-left: 16px;
+}    
 
 /* navbar */
-.navbar {
+.navbar{
+    margin-bottom: 0%;
 }
-
 .navbar-items li {
     display: none; 
 }
@@ -528,12 +481,14 @@ nav a {
 /* banner */
 .banner {
     flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+    margin: 0%;
 }
 
 .banner-img {
-    width: 394px; 
-    height: 245px;
     order: 1; 
+    margin-bottom: 20px;
   }
 
 .banner-content {
@@ -541,41 +496,39 @@ nav a {
 }
 
 .banner-content h1 {
-    font-size: 2.2rem; 
+    font-size: 1.5rem; 
 }
 
 .banner-content p {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
 }
 
 /* our plants */
-.our-plants{
-    
-}
 .our-plants-content{
     max-width: 100%;
-    margin-top: 350px;
+    margin-top: 150px;
 }
 
 .our-plants-content h1 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
 }
 
 .our-plants-content p {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
 }
 
 /* Plants Card */
 .our-plants-cards{
+    max-width: 100%;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 /* Plants Lover */
 .plants-lover-container{
     display: grid;
+    margin: 0%;
+    padding: 0%;
 }
 
 .plants-lover-container img{
@@ -587,11 +540,8 @@ nav a {
 }
 
 /* plants lover content */
-.plants-lover-content{
-    margin: 0%;
-}
 .plants-lover-content h1{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .plants-lover-content ul {
@@ -599,23 +549,25 @@ nav a {
 }
 
 .plants-lover-content ul li {
-    font-size: 1rem;
+    font-size: 14px;
 }
 
 /* Latest Deals */
 .latest-deals{
-    margin: 0%;
+    margin-top: 0%;
 }
+
 .latest-deals-content{
     max-width: 100%;
 }
 
 .latest-deals-content h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .latest-deals-content p {
-    font-size: 0.9rem;
+    font-size: 0.865rem;
+    margin-bottom: 20px;
 }
 
 /* promo card  */
